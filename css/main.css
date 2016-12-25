@@ -1,0 +1,21 @@
+/*
+* 公共样式
+*/
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+
+/*
+* 头部区域
+*/
+.logo{
+    margin: 10px 15px 10px 10px;
+    height:40px;
+}
+
+@media (max-width: 1199px) {
+    .logo{
+        height:30px;
+    }
+}
