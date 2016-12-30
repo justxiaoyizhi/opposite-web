@@ -5,18 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="lib/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
 <body>
 <nav>
-    <div class="navbar-fixed">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-small-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="badges">标签</a></li>
+            <li><a href="buttons">按钮</a></li>
+            <li><a href="footer">页脚</a></li>
+            <li><a href="mobile">手机</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="badges">标签</a></li>
+            <li><a href="buttons">按钮</a></li>
+            <li><a href="footer">页脚</a></li>
+            <li><a href="mobile">手机</a></li>
         </ul>
     </div>
 </nav>
@@ -25,7 +36,7 @@
 
     <ul class="collapsible popout" data-collapsible="accordion">
         <li>
-            <div class="card-panel hoverable collapsible-header">
+            <div class="collapsible-header">
                 <div>Hoverable Card Panel</div>
                 <img src="images/logo.png" />
             </div>
@@ -44,7 +55,7 @@
 </div>
 
 <script src="lib/jquery/jquery.min.js"></script>
-<script src="lib/materialize/js/materialize.min.js"
+<script src="lib/materialize/js/materialize.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
