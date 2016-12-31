@@ -5,17 +5,139 @@ body {
     font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
 }
 
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?8w11jh');
+    src:  url('../fonts/icomoon.eot?8w11jh#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?8w11jh') format('truetype'),
+    url('../fonts/icomoon.woff?8w11jh') format('woff'),
+    url('../fonts/icomoon.svg?8w11jh#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-notice:before {
+    content: "\e999";
+}
+
+
+
 
 /*
 * 头部区域
 */
-.logo{
-    margin: 10px 15px 10px 10px;
-    height:40px;
+header .material-icons {
+    font-size: 28px;
+    line-height: 56px;
+    color: #eee;
 }
 
-@media (max-width: 1199px) {
-    .logo{
-        height:30px;
+header div:nth-child(1) {
+    height: 56px;
+    line-height: 56px;
+}
+header .header-menu {
+    margin-left: 20px;
+    line-height: 56px;
+    color: #eee;
+}
+header .header-menu:hover {
+    color: #fff;
+}
+
+header .logo img {
+    padding-top: 12px;
+    width: 32px;
+}
+@media only screen and (max-width: 600px) {
+    header .side-nav {
+        width: 240px;
     }
 }
+
+header nav.header-search {
+    border-radius: 4px;
+    margin-top: 8px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #64b5f6;
+}
+header nav .nav-wrapper i {
+    height: 40px;
+    line-height: 40px;
+}
+header nav .nav-wrapper .input-field {
+    height: 40px;
+    line-height: 40px;
+}
+
+
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #311b92 ;
+}
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #5E3881;
+}
+.switch label .lever {
+    background-color: #1565c0;
+}
+.switch label .lever:after {
+    background-color: #1379AC;
+}
+
+header .header-grade-box i {
+    cursor: pointer;
+}
+
+header .header-grade-box i:nth-child(2) {
+    margin-left: 10px;
+}
+
+
+
+
+.header-notice-box {
+    position: relative;
+}
+.header-notice {
+    color: #eee;
+    font-size: 28px;
+    line-height:56px;
+    cursor: pointer;
+}
+.header-notice:hover {
+    color: #fff;
+}
+.header-notice-badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: red;
+    border-radius: 10px;
+    position: absolute;
+    left: 24px;
+    top: 4px;
+}
+

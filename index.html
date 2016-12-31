@@ -11,26 +11,65 @@
     <title>Document</title>
 </head>
 <body>
-<nav>
-    <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse">
-            <i class="material-icons">menu</i>
-        </a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="badges">标签</a></li>
-            <li><a href="buttons">按钮</a></li>
-            <li><a href="footer">页脚</a></li>
-            <li><a href="mobile">手机</a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-            <li><a href="badges">标签</a></li>
-            <li><a href="buttons">按钮</a></li>
-            <li><a href="footer">页脚</a></li>
-            <li><a href="mobile">手机</a></li>
-        </ul>
+<!-- 头部 -->
+<header>
+    <div class="row blue lighten-1 z-depth-3">
+        <!-- 菜单menu -->
+        <div class="col s2 m1">
+            <a href="#" data-activates="mobile-demo" class="button-collapse center-align">
+                <i class="material-icons header-menu">menu</i>
+            </a>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="badges">标签</a></li>
+                <li><a href="buttons">按钮</a></li>
+                <li><a href="footer">页脚</a></li>
+                <li><a href="mobile">手机</a></li>
+            </ul>
+        </div>
+        <!-- /菜单menu -->
+        <!-- /Logo -->
+        <div class="col s2 m1">
+            <span class="logo"><img src="images/logo.png" /></span>
+        </div>
+        <!-- /Logo -->
+        <!-- 搜索框 -->
+        <div class="col s8 m7">
+            <nav class="header-search z-depth-0">
+                <div class="nav-wrapper">
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <!-- /搜索框 -->
+        <!-- 切换正反话题 -->
+        <div class="col s1 m1 hide-on-small-only">
+            <div class="switch" title="切换正反话题">
+                <label><input type="checkbox"><span class="lever"></span></label>
+            </div>
+        </div>
+        <!-- /切换正反话题 -->
+        <!-- 关注和收藏 -->
+        <div class="col s1 m1 hide-on-small-only header-grade-box">
+            <i class="material-icons" title="关注">visibility</i>
+            <i class="material-icons" title="收藏">grade</i>
+        </div>
+        <!-- /关注和收藏 -->
+        <!-- 通知消息 -->
+        <div class="col s1 m1 hide-on-small-only header-notice-box">
+            <i class="icon-notice header-notice" title="通知"><span class="header-notice-badge">10</span></i>
+        </div>
+        <!-- /通知消息 -->
     </div>
-</nav>
+</header>
+<!-- /头部 -->
+
+
 
 <div class="container">
 
@@ -44,13 +83,25 @@
         </li>
 
         <li>
-            <div class="card-panel hoverable collapsible-header">
+            <div class="collapsible-header">
                 <div>Hoverable Card Panel</div>
                 <img src="images/logo.png" />
             </div>
             <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
         </li>
     </ul>
+
+    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        <a class="btn-floating btn-large red">
+            <i class="material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
 
 </div>
 
