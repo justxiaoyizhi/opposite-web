@@ -8,6 +8,7 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="lib/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/timer.css">
     <title>Document</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
         <!-- /菜单menu -->
         <!-- /Logo -->
         <div class="col s2 m1">
-            <span class="logo"><img src="images/logo.png" /></span>
+            <span class="logo"><img src="images/logo.png"/></span>
         </div>
         <!-- /Logo -->
         <!-- 搜索框 -->
@@ -49,13 +50,13 @@
         <!-- /搜索框 -->
         <!-- 切换正反话题 -->
         <div class="col s1 m1 hide-on-small-only">
-            <div class="switch" title="切换正反话题">
+            <div class="switch"  title="切换正反话题" id="oppositeSwitch">
                 <label><input type="checkbox"><span class="lever"></span></label>
             </div>
         </div>
         <!-- /切换正反话题 -->
         <!-- 关注和收藏 -->
-        <div class="col s1 m1 hide-on-small-only header-grade-box">
+        <div class="col s1 m1 hide-on-med-and-down header-grade-box">
             <i class="material-icons" title="关注">visibility</i>
             <i class="material-icons" title="收藏">grade</i>
         </div>
@@ -70,26 +71,129 @@
 <!-- /头部 -->
 
 
-
 <div class="container">
 
-    <ul class="collapsible popout" data-collapsible="accordion">
+    <ul class="timeline hide-on-small-only">
         <li>
-            <div class="collapsible-header">
-                <div>Hoverable Card Panel</div>
-                <img src="images/logo.png" />
+            <div class="number hide-on-small-only">正</div>
+            <div class="content">
+                <ul class="collapsible popout" data-collapsible="accordion">
+                    <li>
+                    <div class="card collapsible-header z-depth-0">
+                        <div>Hoverable Card Panel</div>
+                        <img src="images/logo.png"/>
+                    </div>
+                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                </ul>
             </div>
-            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
         </li>
 
         <li>
-            <div class="collapsible-header">
-                <div>Hoverable Card Panel</div>
-                <img src="images/logo.png" />
+            <div class="number hide-on-small-only">反</div>
+            <div class="content">
+                <ul class="collapsible popout" data-collapsible="accordion">
+                    <li>
+                        <div class="card collapsible-header z-depth-0">
+                            <div>Hoverable Card Panel</div>
+                            <img src="images/logo.png"/>
+                        </div>
+                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                </ul>
             </div>
-            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        </li>
+
+        <li>
+            <div class="number hide-on-small-only">反</div>
+            <div class="content">
+                <ul class="collapsible popout" data-collapsible="accordion">
+                    <li>
+                        <div class="card collapsible-header z-depth-0">
+                            <div>Hoverable Card Panel</div>
+                            <img src="images/logo.png"/>
+                        </div>
+                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li>
+            <div class="number hide-on-small-only">反</div>
+            <div class="content">
+                <ul class="collapsible popout" data-collapsible="accordion">
+                    <li>
+                        <div class="card collapsible-header z-depth-0">
+                            <div>Hoverable Card Panel</div>
+                            <img src="images/logo.png"/>
+                        </div>
+                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li>
+            <div class="number hide-on-small-only">反</div>
+            <div class="content">
+                <ul class="collapsible popout" data-collapsible="accordion">
+                    <li>
+                        <div class="card collapsible-header z-depth-0">
+                            <div>Hoverable Card Panel</div>
+                            <img src="images/logo.png"/>
+                        </div>
+                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                </ul>
+            </div>
         </li>
     </ul>
+
+    <!-- 手机上的列表 -->
+    <div class="content show-on-small hide-on-med-and-up">
+        <ul class="collapsible popout" data-collapsible="accordion">
+            <li>
+                <div class="card collapsible-header z-depth-0">
+                    <div>Hoverable Card Panel</div>
+                    <img src="images/logo.png"/>
+                </div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+
+            <li>
+                <div class="card collapsible-header z-depth-0">
+                    <div>Hoverable Card Panel</div>
+                    <img src="images/logo.png"/>
+                </div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+
+            <li>
+                <div class="card collapsible-header z-depth-0">
+                    <div>Hoverable Card Panel</div>
+                    <img src="images/logo.png"/>
+                </div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+
+            <li>
+                <div class="card collapsible-header z-depth-0">
+                    <div>Hoverable Card Panel</div>
+                    <img src="images/logo.png"/>
+                </div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+
+            <li>
+                <div class="card collapsible-header z-depth-0">
+                    <div>Hoverable Card Panel</div>
+                    <img src="images/logo.png"/>
+                </div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+        </ul>
+    </div>
 
     <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
         <a class="btn-floating btn-large red">
@@ -102,11 +206,38 @@
             <li><a class="btn-floating blue" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">attach_file</i></a></li>
         </ul>
     </div>
-
 </div>
+
+
+<footer class="page-footer blue lighten-1">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">南昌大学 肖义智 2017年毕业论文</h5>
+                <p class="grey-text text-lighten-4">白首为功名。旧山松竹老，阻归程。欲将心事付瑶琴。知音少，弦断有谁听。</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">正反方问答系统</h5>
+                <!--<ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>-->
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2016 Copyright Xiaoyizhi
+            <a class="grey-text text-lighten-4 right" href="#!">南昌大学-小源科技</a>
+        </div>
+    </div>
+</footer>
 
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="lib/materialize/js/materialize.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/timer.js"></script>
 </body>
 </html>

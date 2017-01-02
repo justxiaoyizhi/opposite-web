@@ -44,7 +44,7 @@ body {
 header .material-icons {
     font-size: 28px;
     line-height: 56px;
-    color: #eee;
+    color: #fff;
 }
 
 header div:nth-child(1) {
@@ -54,10 +54,10 @@ header div:nth-child(1) {
 header .header-menu {
     margin-left: 20px;
     line-height: 56px;
-    color: #eee;
+    color: #fff;
 }
 header .header-menu:hover {
-    color: #fff;
+    color: #ddd;
 }
 
 header .logo img {
@@ -104,25 +104,40 @@ header nav .nav-wrapper .input-field {
 header .header-grade-box i {
     cursor: pointer;
 }
-
 header .header-grade-box i:nth-child(2) {
     margin-left: 10px;
 }
 
 
+header .header-grade-box .material-icons:hover {
+    color: #ddd;
+}
 
+header .header-grade-box .material-icons:active {
+    display: inline-block;
+    min-width: 28px;
+    font-size: 28px;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #1e88e5;
+    border-radius: 14px;
+}
 
 .header-notice-box {
     position: relative;
 }
+
 .header-notice {
-    color: #eee;
+    color: #fff;
     font-size: 28px;
     line-height:56px;
     cursor: pointer;
 }
 .header-notice:hover {
-    color: #fff;
+    color: #ddd;
 }
 .header-notice-badge {
     display: inline-block;
