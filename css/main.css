@@ -155,4 +155,27 @@ header .header-grade-box .material-icons:active {
     left: 24px;
     top: 4px;
 }
+.home_pagination .pagination .active {
+    background-color: #1e88e5;
+}
+.questionBtn .btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #039be5;
+}
+
+.questionBtn .btn:hover {
+    background-color: #1e88e5;
+}
+
+
+/* 表单下划线的颜色 */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #1e88e5;
+    box-shadow: 0 1px 0 0 #1e88e5;
+}
+/* 表单点击后文本的颜色 */
+.input-field input[type=text]:focus + label {
+    color: #1e88e5;
+}
 

@@ -22,3 +22,6 @@ $('#oppositeSwitch').on('change', function (data) {
         Materialize.toast('正方话题', 1500)
     }
 });
+
+/* 提问按钮展开提问面板 */
+$('.modal').modal();

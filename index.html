@@ -29,12 +29,12 @@
         </div>
         <!-- /菜单menu -->
         <!-- /Logo -->
-        <div class="col s2 m1">
+        <div class="col s1 m1">
             <span class="logo"><img src="images/logo.png"/></span>
         </div>
         <!-- /Logo -->
         <!-- 搜索框 -->
-        <div class="col s8 m7">
+        <div class="col s8 m6">
             <nav class="header-search z-depth-0">
                 <div class="nav-wrapper">
                     <form>
@@ -46,15 +46,23 @@
                     </form>
                 </div>
             </nav>
+
         </div>
         <!-- /搜索框 -->
         <!-- 切换正反话题 -->
         <div class="col s1 m1 hide-on-small-only">
-            <div class="switch"  title="切换正反话题" id="oppositeSwitch">
+            <div class="switch" title="切换正反话题" id="oppositeSwitch">
                 <label><input type="checkbox"><span class="lever"></span></label>
             </div>
         </div>
         <!-- /切换正反话题 -->
+        <!-- 提问按钮 -->
+        <div class="col s1 m1 hide-on-med-and-down">
+            <div class="questionBtn">
+                <a class="btn center-align modal-trigger waves-effect waves-light" href="#questionBox">提问</a>
+            </div>
+        </div>
+        <!-- /提问按钮 -->
         <!-- 关注和收藏 -->
         <div class="col s1 m1 hide-on-med-and-down header-grade-box">
             <i class="material-icons" title="关注">visibility</i>
@@ -72,6 +80,27 @@
 
 
 <div class="container">
+    <!-- 提问按钮点击后展示的新建问题 -->
+    <div id="questionBox" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div>
+                    <h5 class="center-align">写下你的问题</h5>
+                </div>
+                <div class="input-field col s12">
+                    <input id="newQuestionTitle" type="text" class="validate">
+                    <label for="newQuestionTitle">问题标题</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="newQuestionDesc" type="text" class="validate">
+                    <label for="newQuestionDesc">问题描述</label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
 
     <ul class="timeline hide-on-small-only">
         <li>
@@ -79,11 +108,11 @@
             <div class="content">
                 <ul class="collapsible popout" data-collapsible="accordion">
                     <li>
-                    <div class="card collapsible-header z-depth-0">
-                        <div>Hoverable Card Panel</div>
-                        <img src="images/logo.png"/>
-                    </div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                        <div class="card collapsible-header z-depth-0">
+                            <div>Hoverable Card Panel</div>
+                            <img src="images/logo.png"/>
+                        </div>
+                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
                     </li>
                 </ul>
             </div>
@@ -200,10 +229,29 @@
             <i class="material-icons">mode_edit</i>
         </a>
         <ul>
-            <li><a class="btn-floating red" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">insert_chart</i></a></li>
-            <li><a class="btn-floating yellow darken-1" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">format_quote</i></a></li>
-            <li><a class="btn-floating green" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">publish</i></a></li>
-            <li><a class="btn-floating blue" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">attach_file</i></a></li>
+            <li><a class="btn-floating red"
+                   style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i
+                    class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"
+                   style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i
+                    class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"
+                   style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i
+                    class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"
+                   style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i
+                    class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+    <div class="home_pagination">
+        <ul class="pagination right-align">
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active"><a href="#!">1</a></li>
+            <li class="waves-effect"><a href="#!">2</a></li>
+            <li class="waves-effect"><a href="#!">3</a></li>
+            <li class="waves-effect"><a href="#!">4</a></li>
+            <li class="waves-effect"><a href="#!">5</a></li>
+            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
         </ul>
     </div>
 </div>
