@@ -168,14 +168,30 @@ header .header-grade-box .material-icons:active {
     background-color: #1e88e5;
 }
 
-
+/* start:提出问题展示的盒子 */
 /* 表单下划线的颜色 */
-.input-field input[type=text]:focus {
+#questionBox .input-field input[type=text]:focus {
     border-bottom: 1px solid #1e88e5;
     box-shadow: 0 1px 0 0 #1e88e5;
 }
 /* 表单点击后文本的颜色 */
-.input-field input[type=text]:focus + label {
+#questionBox .input-field input[type=text]:focus + label {
     color: #1e88e5;
 }
 
+#questionBox [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+    background-color: #1e88e5;
+}
+
+#questionBox [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+    background-color: #1e88e5;
+}
+
+#questionBox [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+    border: 2px solid #1e88e5;
+}
+
+#questionBox [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+    border: 2px solid #1e88e5;
+}
+/* end:提出问题展示的盒子 */
