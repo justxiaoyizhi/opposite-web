@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="lib/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/timer.css">
-    <title>Document</title>
+    <title>首页</title>
 </head>
 <body>
 <!-- 头部 -->
@@ -51,7 +51,7 @@
         <!-- /搜索框 -->
         <!-- 切换正反话题 -->
         <div class="col s1 m1 hide-on-small-only">
-            <div class="switch" title="切换正反话题" id="oppositeSwitch">
+            <div class="switch center-align" title="切换正反话题" id="oppositeSwitch">
                 <label><input type="checkbox"><span class="lever"></span></label>
             </div>
         </div>
@@ -96,15 +96,15 @@
                     <label for="newQuestionDesc">问题描述(比如背景等等)</label>
                 </div>
                 <div>
-                    <input class="with-gap positive" name="positive" type="radio" id="positive" checked />
+                    <input class="with-gap" name="positive" value="1" type="radio" id="positive" checked="checked" />
                     <label for="positive">正</label>
-                    <input class="with-gap negative" name="positive" type="radio" id="negative" />
+                    <input class="with-gap" name="positive" value="2" type="radio" id="negative" />
                     <label for="negative">反</label>
                 </div>
             </div>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="javascript:void(0)" id="addQuestion" class="modal-action modal-close waves-effect waves-green btn-flat">提问</a>
         </div>
     </div>
 

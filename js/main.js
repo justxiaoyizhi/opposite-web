@@ -25,3 +25,28 @@ $('#oppositeSwitch').on('change', function (data) {
 
 /* 提问按钮展开提问面板 */
 $('.modal').modal();
+
+
+/**
+ * 增加问题
+ */
+
+
+$(document).on("click", "#addQuestion", function () {
+    var questionTitle = $("#newQuestionTitle").val();
+    var questionDesc = $("#newQuestionDesc").val();
+    var positive = $("input[name='positive']:checked").val();
+    var data = {"content": questionTitle, "descr": questionDesc, "type": positive, "userId": "124564561238"};
+    $.ajax({
+            url: basePath + '/question/add',
+            type: 'POST',
+            dataType: 'json',
+            data: data,
+        })
+        .done(function (data) {
+            console.log("success");
+        })
+        .fail(function () {
+            console.log("error");
+        });
+});
