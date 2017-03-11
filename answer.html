@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="lib/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/answer.css">
+    <title>首页</title>
+</head>
+<body>
+<!-- 头部 -->
+<header>
+    <div class="row blue lighten-1 z-depth-3">
+        <!-- 菜单menu -->
+        <div class="col s2 m1">
+            <a href="#" data-activates="mobile-demo" class="button-collapse center-align">
+                <i class="material-icons header-menu">menu</i>
+            </a>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="badges">标签</a></li>
+                <li><a href="buttons">按钮</a></li>
+                <li><a href="footer">页脚</a></li>
+                <li><a href="mobile">手机</a></li>
+            </ul>
+        </div>
+        <!-- /菜单menu -->
+        <!-- /Logo -->
+        <div class="col s1 m1">
+            <span class="logo"><img src="images/logo.png"/></span>
+        </div>
+        <!-- /Logo -->
+        <!-- 搜索框 -->
+        <div class="col s8 m6">
+            <nav class="header-search z-depth-0">
+                <div class="nav-wrapper">
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+
+        </div>
+        <!-- /搜索框 -->
+        <!-- 切换正反话题 -->
+        <div class="col s1 m1 hide-on-small-only">
+            <div class="switch center-align" title="切换正反话题" id="oppositeSwitch">
+                <label><input type="checkbox"><span class="lever"></span></label>
+            </div>
+        </div>
+        <!-- /切换正反话题 -->
+        <!-- 提问按钮 -->
+        <div class="col s1 m1 hide-on-med-and-down">
+            <div class="questionBtn">
+                <a class="btn center-align modal-trigger waves-effect waves-light" href="#questionBox">提问</a>
+            </div>
+        </div>
+        <!-- /提问按钮 -->
+        <!-- 关注和收藏 -->
+        <div class="col s1 m1 hide-on-med-and-down header-grade-box">
+            <i class="material-icons" title="关注">visibility</i>
+            <i class="material-icons" title="收藏">grade</i>
+        </div>
+        <!-- /关注和收藏 -->
+        <!-- 通知消息 -->
+        <div class="col s1 m1 hide-on-small-only header-notice-box">
+            <i class="icon-notice header-notice" title="通知"><span class="header-notice-badge">10</span></i>
+        </div>
+        <!-- /通知消息 -->
+    </div>
+</header>
+<!-- /头部 -->
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="card horizontal col s12">
+            <div class="card-content">
+                <div class="chip">
+                    <img src="images/logo.png" alt="Contact Person">
+                    Jane Doe
+                </div>
+
+                <div class="center-align">
+                    <h5>面试java的一道题，让我很不解，请帮忙解答啊?</h5>
+                </div>
+                <div class="">
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                        because I require little markup to use effectively.
+                        I am a very simple card. I am good at containing small bits of information. I am convenient
+                        because I require little markup to use effectively.
+                        I am a very simple card. I am good at containing small bits of information. I am convenient
+                        because I require little markup to use effectively.
+                        I am a very simple card. I am good at containing small bits of information. I am convenient
+                        because I require little markup to use effectively.
+                    </p>
+                </div>
+                <div class="card-action right-align">
+                    <a class="btn-floating blue a">
+                        <i class="material-icons">visibility</i>
+                    </a>
+                    <a class="btn-floating red b">
+                        <i class="material-icons">create</i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card col s12 answer-box">
+            <div class="card-content">
+                <div class="answer-count">
+                    <div class="left-align">3个回答</div>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="answer-item">
+                    <div class="answer-user chip">
+                        <img src="images/logo.png" alt="Contact Person">
+                        Jane Doe
+                    </div>
+                    <div class="answer-content">
+                        与我境遇相似或更不如的当不在少数，梨梦湖与西子湖，
+                        同是一滴眼泪，给你的颈根与胸膛一半日的自由，对着这不完全，
+                        是怨，再也忍不住的你技痒？
+                    </div>
+                    <div class="answer-time">
+                        发布于 2017-03-01
+                    </div>
+                    <div class="answer-footer">
+                        <div class="action left">
+                            <i class="material-icons">arrow_drop_up</i>
+                            <span class="num" >11</span>
+                        </div>
+                        <div class="action left">
+                            <i class="material-icons">arrow_drop_down</i>
+                            <span class="num" >11</span>
+                        </div>
+                        <div class="action-comment left">
+                            <i class="material-icons">chat_bubble</i>
+                            <span class="num" >11</span>
+                        </div>
+                    </div>
+                    <div class="divider clearfix"></div>
+                </div>
+                <div class="answer-item">
+                    <div class="answer-user chip">
+                        <img src="images/logo.png" alt="Contact Person">
+                        Jane Doe
+                    </div>
+                    <div class="answer-content">
+                        与我境遇相似或更不如的当不在少数，梨梦湖与西子湖，
+                        同是一滴眼泪，给你的颈根与胸膛一半日的自由，对着这不完全，
+                        是怨，再也忍不住的你技痒？
+                    </div>
+                    <div class="answer-time">
+                        发布于 2017-03-01
+                    </div>
+                    <div class="answer-footer">
+                        <div class="action left">
+                            <i class="material-icons">arrow_drop_up</i>
+                            <span class="num" >11</span>
+                        </div>
+                        <div class="action left">
+                            <i class="material-icons">arrow_drop_down</i>
+                            <span class="num" >11</span>
+                        </div>
+                        <div class="action-comment left">
+                            <i class="material-icons">chat_bubble</i>
+                            <span class="num" >11</span>
+                        </div>
+                    </div>
+                    <div class="divider clearfix"></div>
+                </div>
+                <div class="answer-item">
+                    <div class="answer-user chip">
+                        <img src="images/logo.png" alt="Contact Person">
+                        Jane Doe
+                    </div>
+                    <div class="answer-content">
+                        与我境遇相似或更不如的当不在少数，梨梦湖与西子湖，
+                        同是一滴眼泪，给你的颈根与胸膛一半日的自由，对着这不完全，
+                        是怨，再也忍不住的你技痒？
+                    </div>
+                    <div class="answer-time">
+                        发布于 2017-03-01
+                    </div>
+                    <div class="answer-footer">
+                        <div class="action left">
+                            <i class="material-icons">arrow_drop_up</i>
+                            <span class="num" >11</span>
+                        </div>
+                        <div class="action left">
+                            <i class="material-icons">arrow_drop_down</i>
+                            <span class="num" >11</span>
+                        </div>
+                        <div class="action-comment left">
+                            <i class="material-icons">chat_bubble</i>
+                            <span class="num" >11</span>
+                        </div>
+                    </div>
+                    <div class="divider clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<footer class="page-footer blue lighten-1">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">南昌大学 肖义智 2017年毕业论文</h5>
+                <p class="grey-text text-lighten-4">白首为功名。旧山松竹老，阻归程。欲将心事付瑶琴。知音少，弦断有谁听。</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">正反方问答系统</h5>
+                <!--<ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>-->
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2016 Copyright Xiaoyizhi
+            <a class="grey-text text-lighten-4 right" href="#!">南昌大学-小源科技</a>
+        </div>
+    </div>
+</footer>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/materialize/js/materialize.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/answer.js"></script>
+</body>
+</html>

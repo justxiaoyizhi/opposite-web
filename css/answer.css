@@ -1,0 +1,79 @@
+h5 {
+    line-height: 150%;
+}
+
+.container .card-content .card-action {
+    padding-bottom: 0px;
+}
+
+.container .card-content .card-action .btn-floating {
+    margin-left: 20px;
+}
+
+.answer-box .answer-count {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.answer-box .chip {
+    margin: 15px 0;
+}
+
+.answer-box .answer-time {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #8590a6;
+}
+
+.answer-box .answer-footer {
+    margin: 15px 0;
+}
+
+.answer-box .answer-footer .action, .answer-box .answer-footer .action-comment {
+    background-color: #ebf3fb;
+    cursor: pointer;
+    border-radius: 6px;
+    height: 36px;
+    width: 56px;
+    font-size: 15px;
+    position: relative;
+    padding-right: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.answer-box .answer-footer .action-active {
+    background-color: #039be5;
+    color: #fff3e0;
+    cursor: pointer;
+    border-radius: 6px;
+    height: 36px;
+    width: 56px;
+    font-size: 15px;
+    position: relative;
+    padding-right: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.answer-box .answer-footer .action .material-icons, .answer-box .answer-footer .action-active .material-icons {
+    font-size: 36px;
+}
+
+.answer-box .answer-footer .action .num, .answer-box .answer-footer .action-active .num {
+    position: absolute;
+    top: 7px;
+    left: 28px;
+}
+
+.answer-box .answer-footer .action-comment .material-icons {
+    position: absolute;
+    font-size: 18px;
+    top: 10px;
+    left: 9px;
+}
+
+.answer-box .answer-footer .action-comment .num {
+    position: absolute;
+    top: 7px;
+    left: 28px;
+}
