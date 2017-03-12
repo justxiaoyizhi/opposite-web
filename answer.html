@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 
+    <link rel="stylesheet" type="text/css" href="lib/simditor/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/simditor/css/simditor.css"/>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="lib/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -58,7 +60,7 @@
         <!-- /切换正反话题 -->
         <!-- 提问按钮 -->
         <div class="col s1 m1 hide-on-med-and-down">
-            <div class="questionBtn">
+            <div class="questionBtn xiao-btn">
                 <a class="btn center-align modal-trigger waves-effect waves-light" href="#questionBox">提问</a>
             </div>
         </div>
@@ -104,10 +106,10 @@
                     </p>
                 </div>
                 <div class="card-action right-align">
-                    <a class="btn-floating blue a">
+                    <a class="btn-floating blue">
                         <i class="material-icons">visibility</i>
                     </a>
-                    <a class="btn-floating red b">
+                    <a class="btn-floating red" href="#answer-editor">
                         <i class="material-icons">create</i>
                     </a>
                 </div>
@@ -140,15 +142,15 @@
                     <div class="answer-footer">
                         <div class="action left">
                             <i class="material-icons">arrow_drop_up</i>
-                            <span class="num" >11</span>
+                            <span class="num">11</span>
                         </div>
                         <div class="action left">
                             <i class="material-icons">arrow_drop_down</i>
-                            <span class="num" >11</span>
+                            <span class="num">11</span>
                         </div>
                         <div class="action-comment left">
                             <i class="material-icons">chat_bubble</i>
-                            <span class="num" >11</span>
+                            <span class="num">11</span>
                         </div>
                     </div>
                     <div class="divider clearfix"></div>
@@ -169,15 +171,15 @@
                     <div class="answer-footer">
                         <div class="action left">
                             <i class="material-icons">arrow_drop_up</i>
-                            <span class="num" >11</span>
+                            <span class="num">11</span>
                         </div>
                         <div class="action left">
                             <i class="material-icons">arrow_drop_down</i>
-                            <span class="num" >11</span>
+                            <span class="num">11</span>
                         </div>
                         <div class="action-comment left">
                             <i class="material-icons">chat_bubble</i>
-                            <span class="num" >11</span>
+                            <span class="num">11</span>
                         </div>
                     </div>
                     <div class="divider clearfix"></div>
@@ -198,18 +200,31 @@
                     <div class="answer-footer">
                         <div class="action left">
                             <i class="material-icons">arrow_drop_up</i>
-                            <span class="num" >11</span>
+                            <span class="num">11</span>
                         </div>
                         <div class="action left">
                             <i class="material-icons">arrow_drop_down</i>
-                            <span class="num" >11</span>
+                            <span class="num">11</span>
                         </div>
                         <div class="action-comment left">
                             <i class="material-icons">chat_bubble</i>
-                            <span class="num" >11</span>
+                            <span class="num">11</span>
                         </div>
                     </div>
                     <div class="divider clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card col s12 answer-box">
+            <div class="card-content">
+                <a name="answer-editor">
+                    <textarea id="editor" placeholder="这里输入回答" autofocus></textarea>
+                </a>
+                <div class="answer-btn xiao-btn right-align">
+                    <a id="submit-answer" class="btn modal-trigger waves-effect waves-light" href="javascript:">提交回答</a>
                 </div>
             </div>
         </div>
@@ -243,8 +258,10 @@
         </div>
     </div>
 </footer>
-
 <script src="lib/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="lib/simditor/scripts/js/module.js"></script>
+<script type="text/javascript" src="lib/simditor/scripts/js/uploader.js"></script>
+<script type="text/javascript" src="lib/simditor/scripts/js/simditor.js"></script>
 <script src="lib/materialize/js/materialize.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/answer.js"></script>

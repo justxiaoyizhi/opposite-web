@@ -158,13 +158,13 @@ header .header-grade-box .material-icons:active {
 .home_pagination .pagination .active {
     background-color: #1e88e5;
 }
-.questionBtn .btn {
+.xiao-btn .btn {
     padding-left: 20px;
     padding-right: 20px;
     background-color: #039be5;
 }
 
-.questionBtn .btn:hover {
+.xiao-btn .btn:hover {
     background-color: #1e88e5;
 }
 
