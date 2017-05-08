@@ -50,3 +50,15 @@ $(document).on("click", "#addQuestion", function () {
             console.log("error");
         });
 });
+
+/*搜索框的下拉事件*/
+$("#search").keyup(function() {
+    var searchText = $("#search").val();
+    $("#searchResult").append("<a href='#!' class='collection-item'>"+searchText+"</a>");
+    $("#searchResult").show();
+});
+$("#search").blur(function() {
+    $("#searchResult").hide();
+});
+
+

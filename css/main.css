@@ -195,3 +195,10 @@ header .header-grade-box .material-icons:active {
     border: 2px solid #1e88e5;
 }
 /* end:提出问题展示的盒子 */
+
+
+/*搜索的下拉框*/
+#searchResult {
+    z-index: 1;
+    display: none;
+}
