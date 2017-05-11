@@ -29,7 +29,7 @@ h5 {
     margin: 15px 0;
 }
 
-.answer-box .answer-footer .action, .answer-box .answer-footer .action-comment {
+.answer-box .answer-footer .action-agree, .answer-box .answer-footer .action-disagree, .answer-box .answer-footer .action-comment {
     background-color: #ebf3fb;
     cursor: pointer;
     border-radius: 6px;
@@ -41,7 +41,7 @@ h5 {
     margin-right: 10px;
     margin-bottom: 10px;
 }
-.answer-box .answer-footer .action-active {
+.answer-box .answer-footer .action-agree-active, .answer-box .answer-footer .action-disagree-active {
     background-color: #039be5;
     color: #fff3e0;
     cursor: pointer;
@@ -55,11 +55,11 @@ h5 {
     margin-bottom: 10px;
 }
 
-.answer-box .answer-footer .action .material-icons, .answer-box .answer-footer .action-active .material-icons {
+.answer-box .answer-footer .action-agree .material-icons, .answer-box .answer-footer .action-disagree .material-icons, .answer-box .answer-footer .action-agree-active .material-icons, .answer-box .answer-footer .action-disagree-active .material-icons {
     font-size: 36px;
 }
 
-.answer-box .answer-footer .action .num, .answer-box .answer-footer .action-active .num {
+.answer-box .answer-footer .action-agree .num, .answer-box .answer-footer .action-disagree .num, .answer-box .answer-footer .action-agree-active .num, .answer-box .answer-footer .action-disagree-active .num {
     position: absolute;
     top: 7px;
     left: 28px;
@@ -100,7 +100,9 @@ h5 {
     border: 1px solid #999999;
     box-shadow: 0px 0px 0px 0px #1e88e5;
 }*/
-
+.comment {
+    width: 100%;
+}
 .comment textarea.materialize-textarea {
     border: 1px solid #C3CED9;
     border-radius: 5px 5px 5px 5px;
@@ -118,3 +120,6 @@ h5 {
 #comment-box .modal-footer {
     padding: 4px 20px;
 }
+
+s,i,em{font-style:normal;text-decoration:none;}
+a {color:#000; text-decoration:none; }
